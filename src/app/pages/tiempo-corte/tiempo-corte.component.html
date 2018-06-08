@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <span class="titulo">t: Tiempo de corte [min]</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  class="calculadora_form">
+	<p class="formula" [MathJax]="formula">{{formula}}</p>	
+	<form [formGroup]="formgroup" (ngSubmit)="calcular()" novalidate>
+		<ion-item>
+			<ion-label stacked class="calculadora_label">l: Longitud de corte [mm]</ion-label>
+			<ion-input type="number" formControlName="longitud_corte"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label stacked class="calculadora_label">s: Avance por revolución [mm]</ion-label>
+			<ion-input type="number" formControlName="avance_revolucion"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label stacked class="calculadora_label">n: Nº revoluciones por minuto [rpm]</ion-label>
+			<ion-input type="number" formControlName="revoluciones"></ion-input>
+		</ion-item>
+		<button ion-button type="submit" block class="calcular_button" [disabled]="!formgroup.valid">Calcular</button>		
+	</form>	
+	<p class="resultado" [innerHTML]="resultado"></p>		
+</ion-content>

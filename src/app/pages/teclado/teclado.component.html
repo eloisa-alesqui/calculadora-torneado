@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <span class="tituloApp">Torneado</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="teclado_content">
+	<ion-grid class="teclado_grid">
+		<ion-row class="teclado_row">
+			<ion-col col-4 class="teclado_col">
+				<button ion-button block class="teclado_button" (click)="goToVelocidadCorte()">
+					v
+				</button>		
+			</ion-col>
+			<ion-col col-4 class="teclado_col">
+				<button ion-button block class="teclado_button" (click)="goToRevolucionesMinuto()">
+					n 
+				</button>		
+			</ion-col>
+			<ion-col col-4 class="teclado_col">
+				<button ion-button block class="teclado_button" (click)="goToVolumenViruta()">
+					V
+				</button>		
+			</ion-col>
+		</ion-row>
+		<ion-row class="teclado_row">
+			<ion-col col-4 class="teclado_col">
+				<button ion-button block class="teclado_button" (click)="goToTiempoCorte()">
+					t 
+				</button>		
+			</ion-col>
+			<ion-col col-4 class="teclado_col">
+				<button ion-button block class="teclado_button" (click)="goToPotenciaRequerida()">
+					kW 
+				</button>		
+			</ion-col>
+			<ion-col col-4 class="teclado_col">
+				<button ion-button block class="teclado_button" (click)="goToFuerzaEspecificaCorte()">
+					k<sub>sm</sub> 
+				</button>		
+			</ion-col>
+		</ion-row>
+		<ion-row class="teclado_row">
+			<ion-col col-4 class="teclado_col" (click)="goToRugosidadMaxima()">
+				<button ion-button block class="teclado_button">
+					H 
+				</button>		
+			</ion-col>
+			<ion-col col-4 class="teclado_col" (click)="goToEspesorVirutaPlacasRedondas()">
+				<button ion-button block class="teclado_button">
+					h<sub>m-1</sub> 
+				</button>		
+			</ion-col>	
+			<ion-col col-4 class="teclado_col" (click)="goToEspesorVirutaFiloRecto()">
+				<button ion-button block class="teclado_button">
+					h<sub>m-2</sub> 
+				</button>		
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>
