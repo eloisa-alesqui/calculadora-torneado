@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {Validators, FormBuilder, FormGroup} from '@angular/forms';
+import { Component } from '@angular/core';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'fuerza-especifica-corte-page',
@@ -10,7 +10,7 @@ export class FuerzaEspecificaCortePage {
   formgroup: FormGroup;
   resultado: string;
   formula: string;
- 
+
   constructor(private formBuilder: FormBuilder) {
     this.formgroup = this.formBuilder.group({
       fuerza_especifica_corte_referencia: ['', Validators.required],

@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {Validators, FormBuilder, FormGroup} from '@angular/forms';
+import { Component } from '@angular/core';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'volumen-viruta-page',
@@ -9,7 +9,7 @@ export class VolumenVirutaPage {
 
   formgroup: FormGroup;
   resultado: string;
-  formula:string;
+  formula: string;
 
   constructor(private formBuilder: FormBuilder) {
     this.formgroup = this.formBuilder.group({
@@ -17,7 +17,7 @@ export class VolumenVirutaPage {
       profundidad_pasada: ['', Validators.required],
       avance_revolucion: ['', Validators.required]
     });
-    this.formula = '$V = v \\cdot a \\cdot s$'; 
+    this.formula = '$V = v \\cdot a \\cdot s$';
   }
 
   calcular() {

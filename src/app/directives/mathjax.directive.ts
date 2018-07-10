@@ -1,4 +1,4 @@
-import {Directive, ElementRef, Input} from '@angular/core';
+import { Directive, ElementRef, Input } from '@angular/core';
 
 @Directive({
     selector: '[MathJax]'
@@ -8,9 +8,9 @@ export class MathJaxDirective {
 
     constructor(private el: ElementRef) {
     }
-    
+
     ngOnChanges() {
-       this.el.nativeElement.innerHTML = this.formula;
-       eval('MathJax.Hub.Queue(["Typeset",MathJax.Hub, this.el.nativeElement])');
+        this.el.nativeElement.innerHTML = this.formula;
+        eval('MathJax.Hub.Queue(["Typeset",MathJax.Hub, this.el.nativeElement])');
     }
 }

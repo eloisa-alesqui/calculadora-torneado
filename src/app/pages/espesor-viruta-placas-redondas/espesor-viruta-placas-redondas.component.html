@@ -1,13 +1,14 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      <span class="titulo">h<sub>m-1</sub>: Espesor de viruta (placas redondas) [mm]</span>
-    </ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-title>
+			<span class="titulo">h
+				<sub>m-1</sub>: Espesor de viruta (placas redondas) [mm]</span>
+		</ion-title>
+	</ion-navbar>
 </ion-header>
 
-<ion-content  class="calculadora_form">
-	<p class="formula" [MathJax]="formula">{{formula}}</p>	
+<ion-content class="calculadora_form">
+	<p class="formula" [MathJax]="formula">{{formula}}</p>
 	<form [formGroup]="formgroup" (ngSubmit)="calcular()" novalidate>
 		<ion-item>
 			<ion-label stacked class="calculadora_label">s: Avance por revolución [mm]</ion-label>
@@ -21,7 +22,7 @@
 			<ion-label stacked class="calculadora_label">r: Radio de placa [mm]</ion-label>
 			<ion-input type="number" formControlName="radio_placa"></ion-input>
 		</ion-item>
-		<button ion-button type="submit" block class="calcular_button" [disabled]="!formgroup.valid">Calcular</button>		
-	</form>	
-	<p class="resultado" [innerHTML]="resultado"></p>		
+		<button ion-button type="submit" block class="calcular_button" [disabled]="!formgroup.valid">Calcular</button>
+	</form>
+	<p class="resultado" [innerHTML]="resultado"></p>
 </ion-content>
