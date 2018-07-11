@@ -22,7 +22,6 @@
   "_resolved": "https://registry.npmjs.org/mathjax/-/mathjax-2.7.4.tgz",
   "_shasum": "a88c55392b69a9715813cdc041ce02de6548a603",
   "_spec": "mathjax",
-  "_where": "E:\\workspace\\calculadoraTorneado",
   "bugs": {
     "url": "http://github.com/mathjax/MathJax/issues"
   },
