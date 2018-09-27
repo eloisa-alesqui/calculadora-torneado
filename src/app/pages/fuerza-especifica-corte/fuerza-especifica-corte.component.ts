@@ -16,7 +16,7 @@ export class FuerzaEspecificaCortePage {
       fuerza_especifica_corte_referencia: ['', Validators.required],
       espesor_viruta: ['', Validators.required]
     });
-    this.formula = '$k_{sm} = k_{s} \\cdot ( \\frac{0.4}{h_m})^{0.29}$';
+    this.formula = '$k_{sm} = k_{s} \\cdot ( \\frac{0.4}{e})^{0.29}$';
   }
 
   calcular() {

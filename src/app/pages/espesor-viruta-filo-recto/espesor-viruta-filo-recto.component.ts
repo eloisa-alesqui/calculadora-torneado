@@ -16,13 +16,13 @@ export class EspesorVirutaFiloRectoPage {
       avance_revolucion: ['', Validators.required],
       angulo_posicion: ['', Validators.required]
     });
-    this.formula = '$h_{m-2} = s \\cdot sin(λ)$';
+    this.formula = '$e_{2} = s \\cdot sin(λ)$';
   }
 
   calcular() {
     var espesorVirutaFiloRecto;
     espesorVirutaFiloRecto = Number(this.formgroup.get('avance_revolucion').value * Math.sin(this.formgroup.get('angulo_posicion').value * (Math.PI / 180))).toFixed(3);
-    this.resultado = 'h<sub>m-2</sub> = ' + espesorVirutaFiloRecto + ' mm';
+    this.resultado = 'e<sub>2</sub> = ' + espesorVirutaFiloRecto + ' mm';
   }
 
 }

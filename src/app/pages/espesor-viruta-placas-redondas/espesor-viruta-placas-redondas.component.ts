@@ -17,13 +17,13 @@ export class EspesorVirutaPlacasRedondasPage {
       profundidad_pasada: ['', Validators.required],
       radio_placa: ['', Validators.required]
     });
-    this.formula = '$h_{m-1} = s \\cdot \\sqrt{\\frac{a}{2 \\cdot r}}$';
+    this.formula = '$e_{1} = s \\cdot \\sqrt{\\frac{a}{2 \\cdot r}}$';
   }
 
   calcular() {
-    var revolucionesMinuto;
-    revolucionesMinuto = Number(this.formgroup.get('avance_revolucion').value * (Math.sqrt(this.formgroup.get('profundidad_pasada').value / (2 * this.formgroup.get('radio_placa').value)))).toFixed(3);
-    this.resultado = 'h<sub>m-1</sub> = ' + revolucionesMinuto + ' mm';
+    var espesorVirutaPlacasRedondas;
+    espesorVirutaPlacasRedondas = Number(this.formgroup.get('avance_revolucion').value * (Math.sqrt(this.formgroup.get('profundidad_pasada').value / (2 * this.formgroup.get('radio_placa').value)))).toFixed(3);
+    this.resultado = 'e<sub>1</sub> = ' + espesorVirutaPlacasRedondas + ' mm';
   }
 
 }
