@@ -33,21 +33,21 @@ Para este último parámetro la <i>Calculadora de Torneado</i> cuenta con su pro
 
 <li>k<sub>sm</sub>: Fuerza específica de corte,
 a partir de la fuerza específica de corte del material a mecanizar 
-para 1 mm<sup>2</sup> de sección de viruta (k<sub>s</sub>) y el espesor de viruta (h<sub>m</sub>).</li>
+para 1 mm<sup>2</sup> de sección de viruta (k<sub>s</sub>) y el espesor de viruta (e).</li>
 
 <li>H: Altura del perfil o rugosidad máxima,
 a partir del radio de placa de la herramienta (r) empleada y del avance por revolución (s). 
 La <i>Calculadora de Torneado</i> nos devuelve este valor que nos permite evaluar la calidad superficial de nuestro mecanizado.</li>
 
-<li>h<sub>m</sub>: El espesor de viruta, es un parámetro de corte necesario para 
+<li>e: El espesor de viruta, es un parámetro de corte necesario para 
 el cálculo de la Fuerza específica de corte (k<sub>sm</sub>). 
 En función de la relación <i>profundidad de pasada (a) / radio de placa de la herramienta (r)</i> utilizaremos 
 una de las dos opciones que nos proporciona la aplicación:</li>
 <ul>
-<li>h<sub>m-1</sub>: Profundidad de pasada (a) menor que radio de herramienta (r). 
+<li>e<sub>1</sub>: Profundidad de pasada (a) menor que radio de herramienta (r). 
 El avance por revolución (s), la profundidad de pasada (a) 
 y radio de placa de la herramienta (r) son los parámetros necesarios para su cálculo.</li>
-<li>h<sub>m-2</sub>: Profundidad de pasada (a) mayor que radio de herramienta (r). 
+<li>e<sub>2</sub>: Profundidad de pasada (a) mayor que radio de herramienta (r). 
 En este caso se presisa del avance por revolución (s) y el ángulo de ataque de la herramienta (ʎ).</li>
 </ul>
 </ul>
