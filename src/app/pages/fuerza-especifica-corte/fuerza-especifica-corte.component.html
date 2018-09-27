@@ -1,9 +1,7 @@
 <ion-header>
 	<ion-navbar>
 		<ion-title>
-			<span class="titulo">k
-				<sub>sm</sub>: Fuerza especifica de corte [kg/mm
-				<sup>2</sup>]</span>
+			<span class="titulo">k<sub>sm</sub>: Fuerza especifica de corte [kg/mm<sup>2</sup>]</span>
 		</ion-title>
 	</ion-navbar>
 </ion-header>
@@ -12,8 +10,7 @@
 	<p class="formula" [MathJax]="formula">{{formula}}</p>
 	<form [formGroup]="formgroup" (ngSubmit)="calcular()" novalidate>
 		<ion-item>
-			<ion-label stacked class="calculadora_label">k
-				<sub>s</sub>: Fuerza especifica de corte de referencia [kg/mm]</ion-label>
+			<ion-label stacked class="calculadora_label">k<sub>s</sub>: Fuerza especifica de corte de referencia [kg/mm]</ion-label>
 			<ion-input type="number" formControlName="fuerza_especifica_corte_referencia"></ion-input>
 		</ion-item>
 		<ion-item>
